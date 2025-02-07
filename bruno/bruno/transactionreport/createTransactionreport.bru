@@ -1,0 +1,22 @@
+meta {
+  name: createTransactionreport
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:8081/api/transaction-reports
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    
+    "passengerId": 3,
+    "reservationId": 1,
+    "paymentId": 6,
+    "reportDate": "2024-12-05"
+  }
+  
+}

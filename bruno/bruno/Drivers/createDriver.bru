@@ -1,0 +1,18 @@
+meta {
+  name: createDriver
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:8081/api/drivers
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "cc"
+   
+  }
+}

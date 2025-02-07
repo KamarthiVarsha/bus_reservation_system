@@ -1,0 +1,23 @@
+meta {
+  name: updatePassengers
+  type: http
+  seq: 2
+}
+
+put {
+  url: http://localhost:8081/api/passengers/2
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+   
+    "fname": "bjabfjd",
+    "lname": "iii",
+    "gender": 1,
+    "age": 21,
+    "contactAddress": 99999
+  }
+  
+}

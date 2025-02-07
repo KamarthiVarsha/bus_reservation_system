@@ -1,0 +1,20 @@
+meta {
+  name: updateTransactionReport
+  type: http
+  seq: 3
+}
+
+put {
+  url: http://localhost:8081/api/transaction-reports/3
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "passengerId": 3,
+      "reservationId": 1,
+      "paymentId": 6,
+      "reportDate": "2024-12-05"
+    }
+}

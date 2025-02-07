@@ -1,0 +1,21 @@
+meta {
+  name: upateDriver
+  type: http
+  seq: 3
+}
+
+put {
+  url: http://localhost:8081/api/drivers/5
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "driverId": 5,
+      "name": "John Doe",
+      "busIds": [
+        3
+      ]
+    }
+}

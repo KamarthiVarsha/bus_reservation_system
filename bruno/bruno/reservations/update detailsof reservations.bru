@@ -1,0 +1,22 @@
+meta {
+  name: update detailsof reservations
+  type: http
+  seq: 3
+}
+
+put {
+  url: http://localhost:8081/api/reservations/2
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "passengerId": 2,
+    "busId": 2,
+    "destination": "Bengaluru",
+    "departureTime": "2024-06-15T10:30:00",
+    "reservationDate": "2024-06-10"
+  }
+  
+}

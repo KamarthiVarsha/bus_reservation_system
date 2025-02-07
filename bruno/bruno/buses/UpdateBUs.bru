@@ -1,0 +1,21 @@
+meta {
+  name: UpdateBUs
+  type: http
+  seq: 5
+}
+
+put {
+  url: http://localhost:8081/api/buses/3
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    
+      "busNumber": 106,
+      "busStatus": "Available",
+      "busSeats": 40,
+      "driverId": 3
+    }
+}

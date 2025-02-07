@@ -1,0 +1,23 @@
+meta {
+  name: ResetDetails
+  type: http
+  seq: 3
+}
+
+put {
+  url: http://localhost:8081/api/users/reset/varsha
+  body: json
+  auth: basic
+}
+
+auth:basic {
+  username: varsha
+  password: v@123
+}
+
+body:json {
+  {
+    "username":"vani",
+    "password":"varsha"
+  }
+}

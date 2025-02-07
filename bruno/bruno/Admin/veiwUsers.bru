@@ -1,0 +1,16 @@
+meta {
+  name: veiwUsers
+  type: http
+  seq: 1
+}
+
+get {
+  url: http://localhost:8081/api/users/viewusers
+  body: none
+  auth: basic
+}
+
+auth:basic {
+  username: john_doe
+  password: password123
+}

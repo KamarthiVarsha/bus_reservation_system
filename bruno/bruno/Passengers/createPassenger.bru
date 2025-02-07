@@ -1,0 +1,21 @@
+meta {
+  name: createPassenger
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:8081/api/passengers
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "fname": "bjabfjd",
+      "lname": "iii",
+      "gender": 1,
+      "age": 30,
+      "contactAddress": 987394933
+    }
+}

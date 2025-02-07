@@ -1,0 +1,22 @@
+meta {
+  name: createPayment
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:8081/api/payments
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+   
+    "passenger": {
+      "passengerId": 1
+    },
+    "paymentDate": "2025-12-05T10:30:00"
+  }
+  
+}

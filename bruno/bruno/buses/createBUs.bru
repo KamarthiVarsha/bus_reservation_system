@@ -1,0 +1,21 @@
+meta {
+  name: createBUs
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:8081/api/buses
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    
+      "busNumber": 105,
+      "busStatus": "Available",
+      "busSeats": 40,
+      "driverId": 2
+    }
+}
